@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Srivastava Manish & Associates, Chartered Accountants, Lucknow. Audit, taxation, GST, company law, investigation, due diligence and professional advisory services.">
+<title>Srivastava Manish & Associates | Chartered Accountants</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#155b3a; --green2:#1d7650; --green-soft:#eaf3ee;
+  --grey:#263238; --grey2:#59666b; --light:#f3f5f4;
+  --line:#dce4e0; --white:#fff; --gold:#b79a5b;
+  --shadow:0 18px 45px rgba(20,40,32,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",Arial,sans-serif;color:var(--grey);line-height:1.65;background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:#1f292d;color:#dfe7e4;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;gap:20px;padding:8px 0}
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{height:78px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:66px;height:50px;object-fit:contain;background:#fff}
+.brand strong{font-family:"Playfair Display",serif;font-size:20px;color:var(--grey);display:block}
+.brand span{font-size:11px;letter-spacing:2px;color:var(--green);font-weight:700}
+.links{display:flex;gap:23px;align-items:center;font-size:14px;font-weight:600}
+.links a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:6px;font-weight:700;font-size:14px;transition:.25s}
+.btn-green{background:var(--green);color:#fff}.btn-green:hover{background:#10452c;transform:translateY(-1px)}
+.btn-outline{border:1px solid #aebbb5;color:var(--grey);background:#fff}.btn-outline:hover{border-color:var(--green);color:var(--green)}
+.hero{min-height:610px;display:flex;align-items:center;color:#fff;position:relative;overflow:hidden;background:
+linear-gradient(90deg,rgba(20,44,34,.94) 0%,rgba(20,44,34,.82) 48%,rgba(20,44,34,.48) 100%),
+url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero:after{content:"";position:absolute;inset:auto -120px -180px auto;width:500px;height:500px;border:1px solid rgba(255,255,255,.16);border-radius:50%}
+.hero .container{position:relative;z-index:2;padding:90px 0}
+.eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9dfd2;font-weight:700;margin-bottom:18px}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(42px,6vw,72px);line-height:1.05;max-width:780px;margin-bottom:22px}
+.hero p{font-size:18px;max-width:680px;color:#e7efeb;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn-outline{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.4)}
+.stats{margin-top:-42px;position:relative;z-index:5}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);background:#fff;box-shadow:var(--shadow);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.stat{padding:23px 20px;border-right:1px solid var(--line)}
+.stat:last-child{border:0}.stat b{font-size:20px;color:var(--green);display:block}.stat span{font-size:12px;color:var(--grey2)}
+.section{padding:88px 0}.section.alt{background:var(--light)}
+.section-head{max-width:720px;margin-bottom:42px}.kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:9px}.section h2{font-family:"Playfair Display",serif;font-size:42px;line-height:1.15;margin-bottom:13px}.section-head p{color:var(--grey2)}
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.about-img{min-height:430px;border-radius:12px;background:url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85") center/cover;box-shadow:var(--shadow)}
+.about-copy p{color:var(--grey2);margin:14px 0}
+.info-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.info{border:1px solid var(--line);padding:15px;border-radius:8px;background:#fff}.info b{display:block;color:var(--green);font-size:13px}.info span{font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:27px;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#c7d8d0}
+.icon{width:44px;height:44px;border-radius:9px;background:var(--green-soft);color:var(--green);display:grid;place-items:center;font-size:21px;font-weight:800;margin-bottom:17px}
+.card h3{font-size:18px;margin-bottom:8px}.card p{font-size:14px;color:var(--grey2)}
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.person{padding:25px;border:1px solid var(--line);border-radius:10px;background:#fff}.person .tag{color:var(--green);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:800}.person h3{margin:7px 0 5px;font-size:18px}.person p{color:var(--grey2);font-size:13px}.team-qual{font-weight:700;color:var(--green)!important;margin-bottom:7px}.person h3{margin-bottom:4px}
+.resources{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.resource{padding:18px;border:1px solid var(--line);background:#fff;border-radius:9px;font-weight:700;display:flex;align-items:center;justify-content:space-between}.resource small{color:var(--green)}
+.timeline{border-left:2px solid #bdd0c7;margin-left:10px;padding-left:28px;display:grid;gap:24px}.event{position:relative}.event:before{content:"";position:absolute;left:-36px;top:7px;width:12px;height:12px;background:var(--green);border:3px solid #dcebe3;border-radius:50%}.event b{color:var(--green);font-size:13px}.event h3{font-size:18px;margin:3px 0}.event p{color:var(--grey2);font-size:14px}
+.contact{background:var(--green);color:#fff}.contact .section-head p{color:#d8e7df}.offices{display:grid;grid-template-columns:1fr 1fr;gap:18px}.office{background:#fff;color:var(--grey);border-radius:10px;padding:28px}.office h3{font-family:"Playfair Display",serif;font-size:25px;margin-bottom:12px}.office p{font-size:14px;color:var(--grey2);margin:5px 0}.office .buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.office .btn-outline{border-color:#c4d0cb}
+footer{background:#1e272b;color:#c8d1ce;padding:40px 0 20px}.foot{display:flex;justify-content:space-between;gap:30px}.foot strong{color:#fff;font-family:"Playfair Display",serif;font-size:20px}.foot p{font-size:12px;max-width:600px;margin-top:8px}.copy{border-top:1px solid #3a4549;margin-top:25px;padding-top:16px;font-size:11px;color:#9eaaa7;display:flex;justify-content:space-between}
+
+/* Premium enhancements */
+.mobile-toggle{display:none;border:1px solid var(--line);background:#fff;border-radius:7px;width:44px;height:42px;font-size:22px;color:var(--green);cursor:pointer}
+.mobile-menu{display:none}
+.hero-badges{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px}
+.hero-badge{padding:8px 12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);border-radius:999px;font-size:12px;color:#eef7f2}
+.trust-strip{padding:18px 0;background:#fff;border-bottom:1px solid var(--line)}
+.trust-items{display:flex;justify-content:center;gap:38px;flex-wrap:wrap;color:var(--grey2);font-size:13px;font-weight:700}
+.trust-items span:before{content:'✓';color:var(--green);margin-right:7px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.process-step{position:relative;padding:25px;background:#fff;border:1px solid var(--line);border-radius:10px}
+.process-step b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;margin-bottom:15px}
+.process-step h3{font-size:17px;margin-bottom:7px}.process-step p{font-size:13px;color:var(--grey2)}
+.faq{display:grid;gap:10px;max-width:900px}.faq details{border:1px solid var(--line);border-radius:9px;background:#fff;padding:17px 20px}.faq summary{font-weight:700;cursor:pointer;color:var(--grey)}.faq p{margin-top:10px;color:var(--grey2);font-size:14px}
+.quick-contact{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;flex-direction:column;gap:10px}.quick-contact a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;box-shadow:0 8px 22px rgba(0,0,0,.18);font-size:20px}.wa{background:#168b50}.call{background:var(--green)}
+.enquiry{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.enquiry-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:25px}.enquiry-card h3{font-size:20px;margin-bottom:8px}.enquiry-card p{color:var(--grey2);font-size:14px;margin-bottom:16px}.contact-list{display:grid;gap:10px}.contact-list a{padding:12px;border:1px solid var(--line);border-radius:8px;color:var(--green);font-weight:700}
+.mobile-menu{max-width:1160px;margin:0 auto;padding:0 4%;border-top:1px solid var(--line);background:#fff}
+.mobile-menu a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-weight:700;color:var(--grey)}
+.partner-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:stretch}
+.partner-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px;box-shadow:0 10px 32px rgba(20,40,32,.07);transition:.25s}.partner-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.partner-card.featured{border-top:4px solid var(--green)}
+.partner-top{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+.partner-avatar{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;background:var(--green-soft);color:var(--green);font-weight:800;font-size:20px;letter-spacing:1px;border:1px solid #cfe0d7}
+.partner-card h3{font-family:"Playfair Display",serif;font-size:28px;margin:3px 0}
+.partner-card .role{font-size:13px;color:var(--grey2);margin:0}
+.partner-card>p{font-size:14px;color:var(--grey2);margin:12px 0}
+.expertise{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.expertise span{font-size:11px;font-weight:800;color:var(--green);background:var(--green-soft);padding:7px 9px;border-radius:999px}
+.partner-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.partner-highlights>div{padding:20px;border:1px solid var(--line);border-radius:10px;background:var(--light)}
+.partner-highlights b{display:block;color:var(--green);margin-bottom:6px}
+.partner-highlights span{font-size:13px;color:var(--grey2)}
+.premium{background:#f8faf9}.premium-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.premium-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px}.premium-card span{display:inline-block;font-size:12px;letter-spacing:2px;font-weight:800;color:var(--green);margin-bottom:20px}.premium-card h3{font-family:"Playfair Display",serif;font-size:23px;margin-bottom:8px}.premium-card p{font-size:14px;color:var(--grey2)}
+@media(max-width:900px){.mobile-toggle{display:block}.links{display:none}.partner-grid,.partner-highlights{grid-template-columns:1fr}.mobile-menu.open{display:block}.process{grid-template-columns:1fr 1fr}.enquiry{grid-template-columns:1fr}.premium-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.process{grid-template-columns:1fr}.quick-contact{right:14px;bottom:14px}.quick-contact a{width:48px;height:48px}.trust-items{gap:14px;justify-content:flex-start}.hero-badges{margin-bottom:20px}}
+
+.premium{background:#f8faf9}.premium-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.premium-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px}.premium-card span{display:inline-block;font-size:12px;letter-spacing:2px;font-weight:800;color:var(--green);margin-bottom:20px}.premium-card h3{font-family:"Playfair Display",serif;font-size:23px;margin-bottom:8px}.premium-card p{font-size:14px;color:var(--grey2)}
+@media(max-width:900px){.links{display:none}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2n){border-right:0}.about{grid-template-columns:1fr}.cards,.people{grid-template-columns:1fr 1fr}.resources{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.topbar .container{display:block;text-align:center}.topbar .container span:last-child{display:none}.navin{height:70px}.brand strong{font-size:16px}.brand span{font-size:9px}.hero{min-height:590px}.hero h1{font-size:42px}.section{padding:65px 0}.section h2{font-size:34px}.stats{margin-top:-25px}.stats-grid,.cards,.people,.resources,.offices{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.foot,.copy{display:block}.copy span{display:block;margin-top:6px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Chartered Accountants • Lucknow</span><span>Professional • Confidential • Independent</span></div></div>
+
+<header class="nav">
+  <div class="container navin">
+    <a class="brand" href="#home">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/New_CA_India_Logo.png" alt="CA India logo">
+      <div><strong>Srivastava Manish &amp; Associates</strong><span>CHARTERED ACCOUNTANTS</span></div>
+    </a>
+    <nav class="links">
+      <a href="#about">Firm</a><a href="#services">Services</a><a href="#partners">Partners</a><a href="#team">Team</a><a href="#experience">Experience</a><a href="#resources">Resources</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu"><div class="container" style="display:grid;gap:0;padding:8px 0 14px"><a class="btn btn-outline" href="#about">Firm</a><a class="btn btn-outline" href="#services">Services</a><a class="btn btn-outline" href="#partners">Partners</a><a class="btn btn-outline" href="#team">Team</a><a class="btn btn-outline" href="#experience">Experience</a><a class="btn btn-outline" href="#resources">Resources</a><a class="btn btn-green" href="#contact">Contact</a></div></div>
+
+<main id="home">
+<section class="hero">
+ <div class="container">
+   <div class="eyebrow">SRIVASTAVA MANISH &amp; ASSOCIATES</div><div class="hero-badges"><span class="hero-badge">Audit &amp; Assurance</span><span class="hero-badge">Tax &amp; GST</span><span class="hero-badge">Advisory &amp; Compliance</span></div>
+   <h1>Chartered Accountants for audit, tax, compliance and business assurance.</h1>
+   <p>A partner-led professional practice providing audit, taxation, investigation, due diligence, compliance and advisory services from Lucknow, with specialist capabilities in banking audit, forensic review and regulatory support.</p>
+   <div class="actions"><a class="btn btn-green" href="#services">Explore Services</a><a class="btn btn-outline" href="#contact">Contact Office</a></div>
+ </div>
+</section>
+<div class="trust-strip"><div class="container trust-items"><span>Partner-led professional service</span><span>Confidential &amp; independent</span><span>Lucknow-based practice</span><span>Audit, tax &amp; advisory</span></div></div>
+
+<div class="stats"><div class="container stats-grid">
+ <div class="stat"><b>2013</b><span>Established</span></div>
+ <div class="stat"><b>018620C</b><span>ICAI Firm Registration No.</span></div>
+ <div class="stat"><b>Empanelled with RBI</b><span>Reserve Bank of India</span></div>
+ <div class="stat"><b>Empanelled with C&amp;AG</b><span>Comptroller and Auditor General of India</span></div>
+ <div class="stat"><b>15+</b><span>Qualified professionals</span></div>
+</div></div>
+
+<section class="section" id="about"><div class="container about">
+ <div class="about-img"></div>
+ <div class="about-copy">
+  <div class="section-head"><div class="kicker">The Firm</div><h2>Structured expertise. Clear professional focus.</h2></div>
+  <p>Srivastava Manish &amp; Associates is a partnership firm of Chartered Accountants established in 2013, with offices in Lucknow.</p>
+  <p>Our practice covers audit and assurance, investigation, due diligence, accounting support, direct and indirect taxation, company law, FEMA compliance, management consultancy and information systems audits.</p>
+  <div class="info-list">
+   <div class="info"><b>Constitution</b><span>Partnership Firm</span></div>
+   <div class="info"><b>Team</b><span>More than 15 professionals</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="section alt" id="services"><div class="container">
+ <div class="section-head"><div class="kicker">Services</div><h2>Professional services across the business lifecycle.</h2><p>Our service areas are designed around audit, compliance, tax, investigation and business-support requirements.</p></div>
+ <div class="cards">
+  <div class="card"><div class="icon">✓</div><h3>Audit &amp; Assurance</h3><p>Statutory, internal, management, stock, special and other assurance engagements.</p></div>
+  <div class="card"><div class="icon">₹</div><h3>Direct Taxation</h3><p>Tax planning, return compliance, TDS matters, assessments and litigation support.</p></div>
+  <div class="card"><div class="icon">G</div><h3>GST &amp; Indirect Tax</h3><p>GST advisory, compliance, reconciliations, notices and representation support.</p></div>
+  <div class="card"><div class="icon">§</div><h3>Company Law</h3><p>Entity formation, secretarial compliance and corporate regulatory matters.</p></div>
+  <div class="card"><div class="icon">⌕</div><h3>Investigation</h3><p>Forensic and investigative assignments, reviews and transaction-focused analysis.</p></div>
+  <div class="card"><div class="icon">↗</div><h3>Advisory &amp; Due Diligence</h3><p>Due diligence, business advisory, accounting support and management consultancy.</p></div>
+  <div class="card"><div class="icon">§</div><h3>Company Law &amp; Secretarial</h3><p>Entity formation, ROC matters, statutory records and corporate compliance.</p></div>
+  <div class="card"><div class="icon">R</div><h3>Regulatory &amp; FEMA</h3><p>Regulatory compliance and FEMA-related professional support.</p></div>
+  <div class="card"><div class="icon">F</div><h3>Fixed Assets Verification</h3><p>Verification, documentation and reporting of fixed assets.</p></div>
+  <div class="card"><div class="icon">I</div><h3>Information Systems Audit</h3><p>Systems, controls and information-technology audit support.</p></div>
+  <div class="card"><div class="icon">L</div><h3>Litigation &amp; Representation</h3><p>Professional support in tax and regulatory proceedings.</p></div>
+  <div class="card"><div class="icon">P</div><h3>Payroll &amp; Data Management</h3><p>Payroll, bookkeeping, data management and accounting outsourcing.</p></div>
+ </div>
+</div></section>
+
+<section class="section alt"><div class="container"><div class="section-head"><div class="kicker">How We Work</div><h2>A structured approach to every engagement.</h2><p>Clear communication and partner-level supervision from initial discussion through completion.</p></div><div class="process"><div class="process-step"><b>1</b><h3>Understand</h3><p>We clarify your requirement, scope, timelines and relevant documents.</p></div><div class="process-step"><b>2</b><h3>Plan</h3><p>We define the work plan, responsibilities, review points and deliverables.</p></div><div class="process-step"><b>3</b><h3>Execute</h3><p>Our professional team performs the assignment with documented procedures and review.</p></div><div class="process-step"><b>4</b><h3>Deliver</h3><p>We communicate findings, recommendations and next steps clearly and professionally.</p></div></div></div></section>
+
+<section class="section" id="partners">
+ <div class="container">
+  <div class="section-head">
+   <div class="kicker">Partners</div>
+   <h2>Partner-led leadership with depth across audit, tax and advisory.</h2>
+   <p>Our partners bring professional judgement, sector experience and specialised training to the planning, supervision, review and delivery of client assignments.</p>
+  </div>
+
+  <div class="partner-grid">
+   <article class="partner-card featured">
+    <div class="partner-top">
+      <div class="partner-avatar">MS</div>
+      <div><div class="tag">Founding Partner</div><h3>CA Manish Srivastava</h3><p class="role">Chartered Accountant • Audit, Tax &amp; Advisory</p></div>
+    </div>
+    <p>CA Manish Srivastava is a Chartered Accountant and the founding partner of Srivastava Manish &amp; Associates. He leads partner-level planning, supervision, review and professional communication across the firm's assignments.</p>
+    <p>His professional experience includes statutory, internal, special and investigative audit work, with particular exposure to banking and institutional assignments. His work also covers direct and indirect taxation, regulatory compliance, due diligence, business advisory and representation support.</p>
+    <p>He has completed ICAI's Certificate Course on Concurrent Audit of Banks and ICAI's Online Certificate Course on Anti-Money Laundering Laws (AML Specialist), supporting his work in banking audit, compliance and risk-focused engagements.</p>
+    <p>He has also completed the <strong>ICAI Level 1 AI Course</strong>, adding current technology and artificial-intelligence learning to his professional toolkit.</p>
+    <div class="expertise"><span>Audit &amp; Assurance</span><span>Banking Audit</span><span>Taxation</span><span>AML &amp; Compliance</span><span>Investigation</span><span>Advisory</span><span>AI – ICAI Level 1</span></div>
+   </article>
+
+   <article class="partner-card">
+    <div class="partner-top">
+      <div class="partner-avatar">RK</div>
+      <div><div class="tag">Partner</div><h3>CA Rishi Kumar</h3><p class="role">Chartered Accountant • Audit &amp; Investigation</p></div>
+    </div>
+    <p>CA Rishi Kumar is a Chartered Accountant and partner of the firm, involved in audit planning, execution, review and reporting across professional assignments.</p>
+    <p>His experience includes statutory and internal audit work, banking audit, financial and operational review, internal controls, taxation and corporate compliance.</p>
+    <p>He has completed ICAI's Certificate Course on Concurrent Audit of Banks and the ICAI Certificate Course on Forensic Accounting and Fraud Detection, strengthening his capabilities in banking audit, forensic review and fraud-risk focused assignments.</p>
+    <p>He has also completed the <strong>ICAI Level 1 AI Course</strong>, reflecting continued professional learning in emerging technology.</p>
+    <div class="expertise"><span>Audit &amp; Assurance</span><span>Concurrent Bank Audit</span><span>Forensic Accounting</span><span>Fraud Detection</span><span>Internal Controls</span><span>AI – ICAI Level 1</span></div>
+   </article>
+  </div>
+
+  <div class="partner-highlights">
+    <div><b>Partner-led review</b><span>Assignments are planned, supervised and reviewed at the appropriate professional level.</span></div>
+    <div><b>Specialised learning</b><span>Professional training in banking audit, AML and forensic accounting complements core CA expertise.</span></div>
+    <div><b>Technology-aware practice</b><span>Both partners have completed ICAI Level 1 AI learning for practical awareness of emerging technology.</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="team"><div class="container">
+ <div class="section-head"><div class="kicker">Professional Team</div><h2>A multidisciplinary team supporting every engagement.</h2><p>Our professional team brings together audit, compliance, legal, litigation, internal-audit, business and administrative capabilities, enabling coordinated delivery across a broad range of client requirements.</p></div>
+ <div class="people">
+  <div class="person"><div class="tag">Head of Compliance</div><h3>CS Purnima Srivastava</h3><p class="team-qual">FCS</p><p>Leads compliance-focused coordination and supports the firm's corporate and regulatory requirements.</p></div>
+  <div class="person"><div class="tag">Head of Litigation</div><h3>Jai Mani Triveni</h3><p class="team-qual">B.Com, LLB, LLM</p><p>Handles litigation-oriented professional support and assists with legal and representation matters.</p></div>
+  <div class="person"><div class="tag">Head of Audit</div><h3>Rahul Kumar</h3><p class="team-qual">B.Com, LLB, LLM</p><p>Supports audit planning, execution, documentation and coordination across professional assignments.</p></div>
+  <div class="person"><div class="tag">Head of Internal Audit</div><h3>Pratham Gupta</h3><p class="team-qual">B.Com, LLB</p><p>Focuses on internal-audit activities, process review and coordination of internal-control related work.</p></div>
+  <div class="person"><div class="tag">Business Head</div><h3>Bhasker Saran Verma</h3><p class="team-qual">Business Operations</p><p>Supports business operations, coordination and execution of the firm's professional workflows.</p></div>
+  <div class="person"><div class="tag">Internal Audit Manager</div><h3>Vaibhav Srivastava</h3><p class="team-qual">B.Com, LLB</p><p>Supports internal-audit assignments, documentation and engagement-level coordination.</p></div>
+  <div class="person"><div class="tag">Office Admin</div><h3>Sumer Rawat</h3><p class="team-qual">Administration &amp; Office Coordination</p><p>Coordinates office administration, documentation and day-to-day professional office support.</p></div>
+ </div>
+</div></section>
+
+<section class="section premium"><div class="container">
+ <div class="section-head"><div class="kicker">Professional Standards</div><h2>Built around independence, review and professional discipline.</h2><p>Our approach combines partner oversight, structured execution, documented work processes and clear client communication.</p></div>
+ <div class="premium-grid">
+  <div class="premium-card"><span>01</span><h3>Independent perspective</h3><p>Professional assignments are approached with objectivity, confidentiality and appropriate professional judgement.</p></div>
+  <div class="premium-card"><span>02</span><h3>Structured execution</h3><p>Clear scope, documented procedures, defined review points and professional reporting support consistent delivery.</p></div>
+  <div class="premium-card"><span>03</span><h3>Multidisciplinary capability</h3><p>Audit, taxation, compliance, investigation, legal and business-support capabilities work together where an engagement requires it.</p></div>
+ </div>
+</div></section>
+
+<section class="section alt" id="resources"><div class="container">
+ <div class="section-head"><div class="kicker">Regulatory &amp; Professional Resources</div><h2>Official portals, one place.</h2><p>Useful links to government and professional bodies. Links open in a new tab.</p></div>
+ <div class="resources">
+  <a class="resource" target="_blank" rel="noopener" href="https://www.incometax.gov.in/">Income Tax <small>↗</small></a>
+  <a class="resource" target="_blank" rel="noopener" href="https://www.gst.gov.in/">GST Portal <small>↗</small></a>
+  <a class="resource" target="_blank" rel="noopener" href="https://www.cbic.gov.in/">CBIC <small>↗</small></a>
+  <a class="resource" target="_blank" rel="noopener" href="https://www.mca.gov.in/">MCA <small>↗</small></a>
+  <a class="resource" target="_blank" rel="noopener" href="https://www.icai.org/">ICAI <small>↗</small></a>
+  <a class="resource" target="_blank" rel="noopener" href="https://www.rbi.org.in/">RBI <small>↗</small></a>
+  <a class="resource" target="_blank" rel="noopener" href="https://www.sebi.gov.in/">SEBI <small>↗</small></a>
+  <a class="resource" target="_blank" rel="noopener" href="https://cag.gov.in/en">C&amp;AG <small>↗</small></a>
+  <a class="resource" target="_blank" rel="noopener" href="https://www.epfindia.gov.in/">EPFO <small>↗</small></a>
+  <a class="resource" target="_blank" rel="noopener" href="https://www.indiacode.nic.in/">India Code <small>↗</small></a>
+ </div>
+</div></section>
+
+<section class="section" id="experience"><div class="container">
+ <div class="section-head"><div class="kicker">Selected Experience</div><h2>Experience across audit and public-sector assignments.</h2></div>
+ <div class="timeline">
+  <div class="event"><b>Banking Sector</b><h3>Statutory Audit</h3><p>Statutory audit assignments across banking-sector engagements.</p></div>
+  <div class="event"><b>Public Sector Banking</b><h3>Statutory Audit</h3><p>Statutory audit assignments in the public-sector banking environment.</p></div>
+  <div class="event"><b>Government Programmes</b><h3>Audit &amp; Assurance</h3><p>Audit assignments for government programmes and institutional functions.</p></div>
+  <div class="event"><b>Regulatory &amp; Institutional</b><h3>Audit Assignment</h3><p>Professional audit work involving regulatory and institutional functions.</p></div>
+  <div class="event"><b>Banking &amp; Financial Services</b><h3>Stock Audit</h3><p>Stock audit and related professional assignments across the financial-services sector.</p></div>
+ </div>
+</div></section>
+
+<section class="section alt"><div class="container"><div class="section-head"><div class="kicker">Frequently Asked Questions</div><h2>Common professional enquiries.</h2></div><div class="faq"><details><summary>What services does the firm provide?</summary><p>Our current website lists audit and assurance, direct taxation, GST and indirect tax, company law, investigation, advisory and due diligence, regulatory and FEMA support, fixed-asset verification, information systems audit, litigation and representation, and payroll/data management.</p></details><details><summary>How can I contact the firm?</summary><p>You can call or email either Lucknow office using the contact details below. The website also provides Google Maps links for both offices.</p></details><details><summary>Can I discuss a requirement before engaging the firm?</summary><p>Yes. Contact the relevant office to discuss your professional requirement, scope and documentation.</p></details></div></div></section>
+
+<section class="section contact" id="contact"><div class="container">
+ <div class="section-head"><div class="kicker">Contact</div><h2>Lucknow offices</h2><p>Connect with the appropriate office for professional enquiries.</p></div>
+ <div class="enquiry" style="margin-bottom:22px"><div class="enquiry-card"><h3>Need professional assistance?</h3><p>For audit, taxation, GST, compliance, investigation or advisory requirements, contact our office and share your requirement.</p><div class="contact-list"><a href="tel:+919335883613">Call CA Manish Srivastava</a><a href="mailto:camanishsrivastava@gmail.com">Email your requirement</a></div></div><div class="enquiry-card"><h3>Quick enquiry</h3><p>Prefer WhatsApp? Send a message directly and our team can guide you on the appropriate office and next steps.</p><a class="btn btn-green" target="_blank" rel="noopener" href="https://wa.me/919335883613?text=Hello,%20I%20would%20like%20to%20make%20an%20enquiry%20with%20Srivastava%20Manish%20%26%20Associates.">Start WhatsApp Enquiry</a></div></div><div class="offices">
+  <div class="office"><h3>Head Office</h3><p><b>LGF-5, Ramanand Market, Sitapur Road, Lucknow – 226020</b></p><p>Partner: CA Manish Srivastava</p><p>+91 9335883613</p><p>camanishsrivastava@gmail.com</p><div class="buttons"><a class="btn btn-green" href="tel:+919335883613">Call</a><a class="btn btn-outline" href="mailto:camanishsrivastava@gmail.com">Email</a><a class="btn btn-outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ramanand%20Market%20Sitapur%20Road%20Lucknow">Maps</a></div></div>
+  <div class="office"><h3>Branch Office</h3><p class="office-label">BRANCH OFFICE</p><p><b>LGF-23, Vineet Plaza, Gomti Nagar, Lucknow – 226010</b></p><p>Partner: CA Rishi Kumar</p><p>+91 9807189927</p><p>carishisaran@gmail.com</p><div class="buttons"><a class="btn btn-green" href="tel:+919807189927">Call</a><a class="btn btn-outline" href="mailto:carishisaran@gmail.com">Email</a><a class="btn btn-outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Vineet%20Plaza%20Gomti%20Nagar%20Lucknow">Maps</a></div></div>
+ </div>
+</div></section>
+</main>
+
+<div class="quick-contact"><a class="wa" href="https://wa.me/919335883613?text=Hello%20CA%20Manish%20Srivastava,%20I%20would%20like%20to%20discuss%20a%20professional%20requirement." target="_blank" rel="noopener" aria-label="WhatsApp">W</a><a class="call" href="tel:+919335883613" aria-label="Call">☎</a></div>
+<footer><div class="container">
+ <div class="foot"><div><strong>Srivastava Manish &amp; Associates</strong><p>Chartered Accountants • FRN 018620C • Lucknow</p></div><div><p>Professional information and official regulatory resources.</p></div></div>
+ <div class="copy"><span>© 2026 Srivastava Manish &amp; Associates. All rights reserved.</span><span>www.casmaindia.com</span></div>
+</div></footer>
+<script>
+function toggleMenu(){
+  const m=document.getElementById('mobileMenu');
+  if(m) m.classList.toggle('open');
+}
+document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileMenu')?.classList.remove('open')));
+</script>
+</body>
+</html>
